@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var Observable_1 = require('rxjs/Observable');
+require('rxjs/add/operator/map');
+require('rxjs/add/operator/catch');
 var GameService = (function () {
     function GameService(http) {
         this.http = http;
