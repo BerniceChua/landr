@@ -9,18 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var SearchPageComponent = (function () {
-    function SearchPageComponent() {
+var game_component_1 = require('../main/game.component');
+var GameDetailsComponent = (function () {
+    function GameDetailsComponent() {
     }
-    SearchPageComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', game_component_1.Game)
+    ], GameDetailsComponent.prototype, "game", void 0);
+    GameDetailsComponent = __decorate([
         core_1.Component({
-            selector: 'game-page',
-            templateUrl: 'client/game/game-page/game.html',
-            styleUrls: ['client/game/game-page/game.css']
+            selector: 'game-details',
+            templateUrl: 'client/game/game-details/game-details.html',
+            styleUrls: ['client/game/game-details/game-details.css'],
+            providers: [game_component_1.GameService]
         }), 
         __metadata('design:paramtypes', [])
-    ], SearchPageComponent);
-    return SearchPageComponent;
+    ], GameDetailsComponent);
+    return GameDetailsComponent;
 }());
-exports.SearchPageComponent = SearchPageComponent;
-//# sourceMappingURL=game-page.js.map
+exports.GameDetailsComponent = GameDetailsComponent;
+//# sourceMappingURL=game-details.component.js.map
