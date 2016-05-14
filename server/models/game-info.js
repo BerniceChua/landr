@@ -25,7 +25,7 @@ var gameInfoSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
-var gameInfo = mongoose.model('gameInfo', gameInfoSchema);
+var GameInfo = mongoose.model('GameInfo', gameInfoSchema);
 
 // make this available to our users in our Node applications
-module.exports = gameInfo;
+module.exports = GameInfo;
