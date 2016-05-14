@@ -9,13 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var home_component_1 = require('../home/main/home.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'landr-app',
-            template: '<h1>Hello World</h1>'
+            //template : '<h1>Hello</h1>',
+            template: '<home-page></home-page>',
+            directives: [home_component_1.HomePageComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

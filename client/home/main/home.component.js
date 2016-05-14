@@ -16,7 +16,6 @@ var HomePageComponent = (function () {
         core_1.Component({
             selector: 'home-page',
             templateUrl: './home.html',
-            styleUrls: ['./home.css']
         }), 
         __metadata('design:paramtypes', [])
     ], HomePageComponent);
