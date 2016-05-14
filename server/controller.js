@@ -1,4 +1,4 @@
-var GameInfo = require('module');
+var GameInfo = require('models/game-info.js');
 
 'use stricts';
 
