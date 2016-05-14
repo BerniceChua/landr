@@ -9,20 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_deprecated_1 = require('@angular/router-deprecated');
-var HomeComponent = (function () {
-    function HomeComponent() {
+var GameComponent = (function () {
+    function GameComponent() {
     }
-    HomeComponent = __decorate([
+    GameComponent = __decorate([
         core_1.Component({
-            selector: 'home',
-            templateUrl: 'client/home/main/home.html',
-            styleUrls: ['client/home/main/home.html'],
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES]
+            selector: 'game',
+            templateUrl: 'client/app/game/main/game.html',
+            styleUrls: ['client/app/game/main/game.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], GameComponent);
+    return GameComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.GameComponent = GameComponent;
+//# sourceMappingURL=game.component.js.map

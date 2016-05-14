@@ -10,16 +10,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var home_component_1 = require('../home/main/home.component');
+var search_page_component_1 = require('../search-page/main/search-page.component');
+var router_deprecated_1 = require('@angular/router-deprecated');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'landr-app',
-            //template : '<h1>Hello</h1>',
-            template: '<home-page></home-page>',
-            directives: [home_component_1.HomePageComponent]
-        }), 
+            template: '<router-outlet></router-outlet>',
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES, home_component_1.HomeComponent],
+            providers: [router_deprecated_1.ROUTER_PROVIDERS]
+        }),
+        router_deprecated_1.RouteConfig([
+            {
+                path: '/home',
+                name: 'Home',
+                component: home_component_1.HomeComponent,
+                useAsDefault: true
+            },
+            {
+                path: '/search',
+                name: 'Search',
+                component: search_page_component_1.SearchPageComponent
+            }
+        ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
