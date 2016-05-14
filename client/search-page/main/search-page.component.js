@@ -9,14 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var game_details_1 = require('../../game/game-details/game-details');
 var SearchPageComponent = (function () {
     function SearchPageComponent() {
     }
     SearchPageComponent = __decorate([
         core_1.Component({
             selector: 'search-page',
-            templateUrl: './search-page.html',
-            styleUrls: ['./search-page.css']
+            templateUrl: 'client/search-page/main/search.html',
+            styleUrls: ['client/search-page/main/search.css'],
+            directives: [game_details_1.GameDetailsComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], SearchPageComponent);
