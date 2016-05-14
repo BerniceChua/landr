@@ -17,10 +17,10 @@ var gameInfoSchema = new Schema({
   version: { type: String },
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  admin: Boolean,
-  location: String,
-  created_at: Date,
-  updated_at: Date
+  admin: { type: Boolean },
+  location: { type: String },
+  created_at: { type: Date },
+  updated_at: { type: Date }
 });
 
 // the schema is useless so far
