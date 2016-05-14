@@ -13,7 +13,7 @@ var gameInfoSchema = new Schema({
   link_facebook: { type: String },
   link_twitter: { type: String },
   link_google_plus: { type: String },
-  downloand: { type: String },
+  download: { type: String },
   version: { type: String },
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
