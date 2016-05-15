@@ -60,7 +60,17 @@ export class GameService {
 
 
 export class Game {
-  name : string
+  username : string;
+  password : string;
+  title : string;
+  subtitle : string;
+  description : string;
+  facebook : string;
+  twitter : string;
+  video : string;
+  mainImage: string;
+  testimonials : string;
+  name : string;
 }
 
 export class GameComponent {
