@@ -1,7 +1,8 @@
 var dotenv = require('dotenv').config();
+var process = require('process');
 var mongoose = require('mongoose');
 
-var mongooseURI = 'mongodb://' + DB_USER + ':' + DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
+var mongooseURI = 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
 mongoose.connect(mongooseURI);
 
 var Schema = mongoose.Schema;
