@@ -63,6 +63,6 @@ var PORT = 8080;
 //Lets start our server
 app.listen(process.env.PORT || PORT, function () {
     //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", PORT);
+    console.log("Server listening on: http://localhost:%s", process.env.PORT);
 });
 //# sourceMappingURL=server.js.map
