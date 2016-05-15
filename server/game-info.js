@@ -8,8 +8,8 @@ mongoose.connect(mongooseURI);
 var Schema = mongoose.Schema;
 
 // create a schema
-var gameInfoSchema = new Schema({
-  title: { type: String},
+var gameSchema = new Schema({
+  title: { type: String },
   description: { type: String },
   pictures: [ { type: String } ],
   videos: [ { type: String } ],
@@ -28,7 +28,7 @@ var gameInfoSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
-var GameInfo = mongoose.model('GameInfo', gameInfoSchema);
+var Game = mongoose.model('Game', gameSchema);
 
 // make this available to our users in our Node applications
-module.exports = GameInfo;
+module.exports = Game;
