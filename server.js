@@ -38,7 +38,7 @@ function ngApp(req, res) {
         directives: [app_component_1.AppComponent],
         // dependencies shared among all requests to server
         platformProviders: [
-            angular2_universal_1.provide(angular2_universal_1.ORIGIN_URL, { useValue: 'http://localhost:8080' }),
+            angular2_universal_1.provide(angular2_universal_1.ORIGIN_URL, { useValue: 'http://localhost:3000' }),
             angular2_universal_1.provide(angular2_universal_1.BASE_URL, { useValue: baseUrl }),
         ],
         // dependencies re-created for each request
@@ -59,10 +59,10 @@ function ngApp(req, res) {
 // if you want Express to handle certain routes (ex. for an API) make sure you adjust this
 app.use('*', ngApp);
 //Lets define a port we want to listen to
-var PORT = 8080;
+var PORT = 3000;
 //Lets start our server
 app.listen(process.env.PORT || PORT, function () {
     //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", process.env.PORT);
+    console.log("Server listening on: http://localhost:%s", PORT);
 });
 //# sourceMappingURL=server.js.map
