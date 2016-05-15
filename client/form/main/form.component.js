@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
+var router_deprecated_1 = require('@angular/router-deprecated');
 var game_component_1 = require('../../game/main/game.component');
 var GameFormComponent = (function () {
     function GameFormComponent(gameService) {
@@ -27,7 +28,7 @@ var GameFormComponent = (function () {
             selector: 'game-form',
             templateUrl: 'client/form/main/game-form.html',
             styleUrls: ['client/form/main/game-form.css'],
-            directives: [common_1.FORM_DIRECTIVES],
+            directives: [common_1.FORM_DIRECTIVES, router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [game_component_1.GameService]
         }), 
         __metadata('design:paramtypes', [game_component_1.GameService])

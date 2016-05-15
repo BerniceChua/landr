@@ -30,5 +30,6 @@
       <input type="text" class="form-control" placeholder="If you have any testimonials, it go there" ngControl="testimonials">
     </div>
     <button class="btn btn-default" type="submit">Submit</button>
+    <button [routerLink]="['Game', {name:gameForm.value.username}]">Go to game</button>
   </form>
 </section>
