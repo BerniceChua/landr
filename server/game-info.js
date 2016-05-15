@@ -1,7 +1,7 @@
-require('dotenv').config();
+var dotenv = require('dotenv').config();
 var mongoose = require('mongoose');
 
-let mongooseURI = 'mongodb://' + DB_USER + ':' + DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
+var mongooseURI = 'mongodb://' + dotenv.DB_USER + ':' + dotenv.DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
 //mongoose.connect('mongodb://localhost:8080/my_database');
 mongoose.connect(mongooseURI);
 
