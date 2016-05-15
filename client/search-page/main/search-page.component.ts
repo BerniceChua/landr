@@ -27,4 +27,12 @@ export class SearchPageComponent {
     let link = ['Game', {name : game.name}];
     this.router.navigate(link);
   }
+
+  addGame(title:string) {
+    if (!title) {return;}
+    this.gameService.addGame(title)
+      .subscribe(
+        game  => this.games.push(game),
+        error =>  this.errorMessage = <any>error);
+      }
 }

@@ -29,10 +29,23 @@ const ROOT = path.join(path.resolve(__dirname, '..'));
 
 var app = express();
 
+
 app.use(express.static(__dirname));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(bodyParser.json());
+
+//routes
+// Get the controller functions
+var controller = require('./server/controller.js');
+//Define the routes
+app.route('/').get(controller.index);
+app.route('/game:id').get(controller.getGame);
+app.route('/game').post(controller.createGame);
+//app.route('/game:id').delete(controller.deleteGame);
+//app.route('/game').put(controller.updateGame);
+//app.route('/page:id').get(controller.displayGame);
+//app.route('/page').get(controller.showList)
 
 /*
  *  Angular Universal settings
