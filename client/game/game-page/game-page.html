@@ -3,8 +3,8 @@
 
 		<!-- Title -->
 			<div id="background" class="background">
-				<div id="title" class="title">LANDR</div>
-				<div id="subtitle" class="subtitle">A free landing page template for indie games</div>
+				<div id="title" class="title">{{game.title}}</div>
+				<div id="subtitle" class="subtitle">{{game.subtitle}}</div>
 				<div class="CTA-Button">
 					<button class="GET-IT-NOW">GET IT NOW</button>
 				</div>
@@ -12,24 +12,25 @@
 
 		<!-- Trailer -->
 			<div class="trailer">
-				<img id="trailer" alt="trailer" src="./assets/screen-shot-2016-05-14-at-10535-p-m.png" />
+				<img id="trailer" alt="trailer" src="{{game.video}}" />
 			</div>
 
 		<!-- Social Media -->
 			<div>
 				<div class="FACEBOOK">
-					<a id="facebook" href="https://www.facebook.com/landrgame"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; FACEBOOK</a>
+					<a id="facebook" href="{{game.facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; FACEBOOK</a>
 				</div>
 				<div class="TWITTER">
-					<a id="twitter" href="https://twitter.com/landrgame"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp; TWITTER</a>
+					<a id="twitter" href="{{game.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp; TWITTER</a>
 				</div>
 			</div>
 
 		<!-- Reviews -->
 			<div id="screenshot-1" class="main-1">
-				<div class="quote-big">Landr is the best game I have ever played.</div>
+				<div class="quote-big">{{game.testimonials}}</div>
 				<div class="review-source-big">The New York Times</div>
 			</div>
+			<!--
 			<div id="reviews">
 				<div class="Rectangle-5">
 					<div class="quote">Landr is the best game I have ever played.</div>
@@ -44,9 +45,10 @@
 					<div class="review-source">~ Mom</div>
 				</div>
 			</div>
+		-->
 
 		<!-- Hashtag -->
-			<div id="twitter-handler" class="hashtag">#LANDRGAME</div>
+			<div id="twitter-handler" class="hashtag">#{{title}}</div>
 
 		<!-- Screenshot -->
 			<div class="main-2">
@@ -57,12 +59,11 @@
 				<img alt="thumb" src="http://placehold.it/220x165" />
 				<img alt="thumb" src="http://placehold.it/220x165" />
 			</div>
-
 	</div>
 	<!-- Footer -->
 	<footer>
 		<div class="row">
-				<div class="logo"> 
+				<div class="logo">
 					<img id="logo" alt="logo" src="./assets/team-sunset-logo.png" />
 				</div>
 				<div id="made-by" class="made-by">made by team sunset</div>

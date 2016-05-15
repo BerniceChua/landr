@@ -10,18 +10,15 @@ var Schema = mongoose.Schema;
 // create a schema
 var gameSchema = new Schema({
   title: { type: String },
+  subtitle : { type : String },
   description: { type: String },
+  mainImage : {type : String},
   pictures: [ { type: String } ],
-  videos: [ { type: String } ],
-  link_facebook: { type: String },
-  link_twitter: { type: String },
-  link_google_plus: { type: String },
-  download: { type: String },
-  version: { type: String },
+  video: { type: String },
+  facebook: { type: String },
+  twitter: { type: String },
   username: { type: String, unique: true },
   password: { type: String },
-  admin: { type: Boolean },
-  location: { type: String },
   created_at: { type: Date },
   updated_at: { type: Date }
 });

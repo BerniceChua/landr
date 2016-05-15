@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FORM_DIRECTIVES, ControlGroup, Control } from '@angular/common';
 import { Response } from '@angular/http';
+import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 import { GameService, Game } from '../../game/main/game.component';
 
@@ -8,7 +9,7 @@ import { GameService, Game } from '../../game/main/game.component';
   selector : 'game-form',
   templateUrl : 'client/form/main/game-form.html',
   styleUrls : ['client/form/main/game-form.css'],
-  directives : [FORM_DIRECTIVES],
+  directives : [FORM_DIRECTIVES, ROUTER_DIRECTIVES],
   providers : [GameService]
 })
 
