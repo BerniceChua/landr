@@ -50,6 +50,7 @@ app.route('/game').post(controller.createGame);
 /*
  *  Angular Universal settings
  */
+
  function ngApp(req, res) {
   let baseUrl = '/';
   let url = req.originalUrl || '/';
@@ -59,7 +60,7 @@ app.route('/game').post(controller.createGame);
 
     // dependencies shared among all requests to server
     platformProviders: [
-      provide(ORIGIN_URL, {useValue: 'http://localhost:8080'}),
+      provide(ORIGIN_URL, {useValue: 'http://localhost:3000'}),
       provide(BASE_URL, {useValue: baseUrl}),
     ],
 
@@ -85,11 +86,11 @@ app.route('/game').post(controller.createGame);
 app.use('*', ngApp);
 
 //Lets define a port we want to listen to
-const PORT=8080;
+const PORT=3000;
 
 
 //Lets start our server
 app.listen(process.env.PORT || PORT, function(){
     //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", process.env.PORT);
+    console.log("Server listening on: http://localhost:%s", PORT);
 });
