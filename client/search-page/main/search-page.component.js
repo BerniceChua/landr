@@ -24,14 +24,6 @@ var SearchPageComponent = (function () {
         var link = ['Game', { name: game.name }];
         this.router.navigate(link);
     };
-    SearchPageComponent.prototype.addGame = function (title) {
-        var _this = this;
-        if (!title) {
-            return;
-        }
-        this.gameService.addGame(title)
-            .subscribe(function (game) { return _this.games.push(game); }, function (error) { return _this.errorMessage = error; });
-    };
     SearchPageComponent = __decorate([
         core_1.Component({
             selector: 'search-page',

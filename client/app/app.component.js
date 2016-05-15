@@ -14,6 +14,7 @@ var http_1 = require('@angular/http');
 var home_component_1 = require('../home/main/home.component');
 var game_page_component_1 = require('../game/game-page/game-page.component');
 var search_page_component_1 = require('../search-page/main/search-page.component');
+var form_component_1 = require('../form/main/form.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -40,6 +41,11 @@ var AppComponent = (function () {
                 path: '/game/:name',
                 name: 'Game',
                 component: game_page_component_1.GamePageComponent
+            },
+            {
+                path: '/game-form',
+                name: 'GameForm',
+                component: form_component_1.GameFormComponent
             }
         ]), 
         __metadata('design:paramtypes', [])

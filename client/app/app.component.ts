@@ -5,6 +5,7 @@ import { HTTP_PROVIDERS }    from '@angular/http';
 import { HomeComponent } from '../home/main/home.component';
 import { GamePageComponent } from '../game/game-page/game-page.component';
 import { SearchPageComponent } from '../search-page/main/search-page.component';
+import { GameFormComponent } from '../form/main/form.component';
 
 
 @Component({
@@ -31,6 +32,11 @@ import { SearchPageComponent } from '../search-page/main/search-page.component';
     path : '/game/:name',
     name : 'Game',
     component : GamePageComponent
+  },
+  {
+    path : '/game-form',
+    name : 'GameForm',
+    component : GameFormComponent
   }
 ])
 

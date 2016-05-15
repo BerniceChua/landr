@@ -60,7 +60,7 @@ app.route('/game').post(controller.createGame);
 
     // dependencies shared among all requests to server
     platformProviders: [
-      provide(ORIGIN_URL, {useValue: 'http://localhost:3000'}),
+      provide(ORIGIN_URL, {useValue: 'http://localhost:8080'}),
       provide(BASE_URL, {useValue: baseUrl}),
     ],
 

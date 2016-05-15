@@ -30,8 +30,8 @@ var GameService = (function () {
             .catch(this.handleError);
     };
     ;
-    GameService.prototype.addGame = function (title) {
-        var body = JSON.stringify({ title: title });
+    GameService.prototype.addGame = function (game) {
+        var body = JSON.stringify({ game: game });
         var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
         var options = new http_1.RequestOptions({ headers: headers });
         return this.http.post(this.gameUrl, body, options)

@@ -18,12 +18,9 @@ var Game = require('./game-info.js');
  }
 
  exports.createGame = function(req, res){
-    console.log(req.body);  
-   var game = new Game(req.body);
-   console.log(game);
+   var game = new Game(req.body.game);
 
    game.save(function(newGame, err){
-     console.log(newGame);
      if(err){res.jsonp(err);}
      else{res.jsonp(newGame);}
    });
