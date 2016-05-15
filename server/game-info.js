@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
 var dotenv = require('dotenv').config();
 var process = require('process');
 
-
 var mongooseURI = 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
 mongoose.connect(mongooseURI);
 */
