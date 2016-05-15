@@ -4,7 +4,9 @@
 
 ## About
 
-A landing page generator for indie game developers.
+A landing page generator for indie game developers.  
+
+This simplifies the process, so that the indie game developers can focus on making videogames instead of coding a webpage.  
 
 [![Build Status](https://travis-ci.org/TobiahZ/vscode-comment-snippets.svg?branch=master)](https://travis-ci.org/TobiahZ/vscode-comment-snippets)
 
@@ -36,24 +38,22 @@ We are Team-Sunset, a ragtag bunch of software developers, web developers, desig
 
 ### Contributor List
 - Sorob Raissi
-  - [GitHub](https://github.com/)
-  - [LinkedIn](https://www.linkedin.com/in/)
+  - [GitHub](https://github.com/dieharders)
+  - [LinkedIn](https://www.linkedin.com/in/sraissi)
 - Brian Ta
-  - [GitHub](https://github.com/)
-  - [LinkedIn](https://www.linkedin.com/in/)
+  - [GitHub](https://github.com/bctaucsd)
+  - [LinkedIn](https://www.linkedin.com/in/brianta626)
 - Bernice Anne W. Chua
   - [GitHub](https://github.com/BerniceChua)
   - [LinkedIn](https://linkedin.com/in/bernicechua415)
   - [Twitter](https://twitter.com/ChuaBernice)
 - Francois Guezengar
-  - [GitHub](https://github.com/)
-  - [LinkedIn](https://www.linkedin.com/in/)
+  - [GitHub](https://github.com/GrandSchtroumpf)
+  - [LinkedIn](https://www.linkedin.com/in/françois-guezengar-3553845b)
 - Wenjie Yang
-  - [GitHub](https://github.com/)
-  - [LinkedIn](https://www.linkedin.com/in/)
+  - [GitHub](https://github.com/wenjiey)
 - Paul Lee
-  - [GitHub](https://github.com/)
-  - [LinkedIn](https://www.linkedin.com/in/)
+  - [GitHub](https://github.com/chihpenglee)
 
 
 ## Contributing
@@ -65,6 +65,11 @@ I would love to support more languages as well.
 ## Feedback
 
 (coming soon!)
+
+## Issues
+
+We had trouble connecting to the mongoose database.  We will figure this out!!!
+
 
 ## License
 
