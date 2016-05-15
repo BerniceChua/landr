@@ -1,8 +1,7 @@
-require('dotenv').config();
+var dotenv = require('dotenv').config();
 var mongoose = require('mongoose');
 
-let mongooseURI = 'mongodb://' + DB_USER + ':' + DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
-//mongoose.connect('mongodb://localhost:8080/my_database');
+var mongooseURI = 'mongodb://' + DB_USER + ':' + DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
 mongoose.connect(mongooseURI);
 
 var Schema = mongoose.Schema;
@@ -10,18 +9,15 @@ var Schema = mongoose.Schema;
 // create a schema
 var gameSchema = new Schema({
   title: { type: String },
+  subtitle : { type : String },
   description: { type: String },
+  mainImage : {type : String},
   pictures: [ { type: String } ],
-  videos: [ { type: String } ],
-  link_facebook: { type: String },
-  link_twitter: { type: String },
-  link_google_plus: { type: String },
-  download: { type: String },
-  version: { type: String },
+  video: { type: String },
+  facebook: { type: String },
+  twitter: { type: String },
   username: { type: String, unique: true },
   password: { type: String },
-  admin: { type: Boolean },
-  location: { type: String },
   created_at: { type: Date },
   updated_at: { type: Date }
 });
