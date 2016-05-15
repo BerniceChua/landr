@@ -9,17 +9,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var router_deprecated_1 = require('@angular/router-deprecated');
+var http_1 = require('@angular/http');
 var home_component_1 = require('../home/main/home.component');
+var game_page_component_1 = require('../game/game-page/game-page.component');
+var search_page_component_1 = require('../search-page/main/search-page.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'landr-app',
-            //template : '<h1>Hello</h1>',
-            template: '<home-page></home-page>',
-            directives: [home_component_1.HomePageComponent]
-        }), 
+            template: '<router-outlet></router-outlet>',
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES, home_component_1.HomeComponent],
+            providers: [router_deprecated_1.ROUTER_PROVIDERS, http_1.HTTP_PROVIDERS]
+        }),
+        router_deprecated_1.RouteConfig([
+            {
+                path: '/home',
+                name: 'Home',
+                component: home_component_1.HomeComponent,
+                useAsDefault: true
+            },
+            {
+                path: '/search',
+                name: 'Search',
+                component: search_page_component_1.SearchPageComponent
+            },
+            {
+                path: '/game/:name',
+                name: 'Game',
+                component: game_page_component_1.GamePageComponent
+            }
+        ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;

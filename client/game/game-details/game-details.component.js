@@ -9,20 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_deprecated_1 = require('@angular/router-deprecated');
-var HomeComponent = (function () {
-    function HomeComponent() {
+var game_component_1 = require('../main/game.component');
+var GameDetailsComponent = (function () {
+    function GameDetailsComponent() {
     }
-    HomeComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', game_component_1.Game)
+    ], GameDetailsComponent.prototype, "game", void 0);
+    GameDetailsComponent = __decorate([
         core_1.Component({
-            selector: 'home',
-            templateUrl: 'client/home/main/home.html',
-            styleUrls: ['client/home/main/home.html'],
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES]
+            selector: 'game-details',
+            templateUrl: 'client/game/game-details/game-details.html',
+            styleUrls: ['client/game/game-details/game-details.css'],
+            providers: [game_component_1.GameService]
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], GameDetailsComponent);
+    return GameDetailsComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.GameDetailsComponent = GameDetailsComponent;
+//# sourceMappingURL=game-details.component.js.map
