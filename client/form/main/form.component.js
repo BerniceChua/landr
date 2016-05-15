@@ -16,18 +16,20 @@ var GameFormComponent = (function () {
     function GameFormComponent(gameService) {
         this.gameService = gameService;
         this.gameForm = new game_component_1.Game();
+        this.completed = false;
     }
     GameFormComponent.prototype.createPage = function (data) {
         if (!data) {
             return;
         }
         this.gameService.addGame(data);
+        this.game = data;
     };
     GameFormComponent = __decorate([
         core_1.Component({
             selector: 'game-form',
             templateUrl: 'client/form/main/game-form.html',
-            styleUrls: ['client/form/main/game-form.css'],
+            styleUrls: ['client/form/main/game-form.css', 'client/game/game-page/game-page.css'],
             directives: [common_1.FORM_DIRECTIVES, router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [game_component_1.GameService]
         }), 
