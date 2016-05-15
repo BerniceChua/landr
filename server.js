@@ -38,7 +38,7 @@ function ngApp(req, res) {
         directives: [app_component_1.AppComponent],
         // dependencies shared among all requests to server
         platformProviders: [
-            angular2_universal_1.provide(angular2_universal_1.ORIGIN_URL, { useValue: 'http://localhost:3000' }),
+            angular2_universal_1.provide(angular2_universal_1.ORIGIN_URL, { useValue: 'http://localhost:8080' }),
             angular2_universal_1.provide(angular2_universal_1.BASE_URL, { useValue: baseUrl }),
         ],
         // dependencies re-created for each request

@@ -1,19 +1,23 @@
-
 <section id="section1">
-  <header>
-    <h3 class="landr-title">landr</h3>
-    <span>download</span>
-    <span [routerLink]="['Search']">Explore</span>
-    <input placeholder="search"/>
-  <header>
-  <article>
-    <h1>A simple landing page for you indie game</h1>
-    <button class="main-download">DOWNLOAD</button>
-    <div>
-      <span><i></i>FACEBOOK</span>
-      <span><i></i>FACEBOOK</span>
+  <header class="row">
+    <h3 class="col-md-2 landr-title">landr</h3>
+    <div class="col-md-offset-8">
+      <span [routerLink]="['GameForm']">Get started</span>
+      <span [routerLink]="['Search']">Explore</span>
+      <input placeholder="search"/>
     </div>
-    <div class="down"></div>
+  </header>
+  <article>
+    <div>
+      <h1>A simple landing page for you indie game</h1>
+      <button class="main-download" [routerLink]="['GameForm']">Get Started</button>
+      <div>
+        <span><i></i>FACEBOOK</span>
+        <span><i></i>TWITTER</span>
+      </div>
+      <img class="down" src="client/home/main/assets/down.png"/>
+    </div>
+
   </article>
 </section>
 
@@ -58,9 +62,9 @@
     <button class="main-download">GET IT NOW</button>
   </div>
   <div>
-    <span>1<span><span>Download the client.</span>
-    <span>2<span><span>Fill out the form.</span>
-    <span>3<span><span>Hit 'build'.</span>
+    <span>1</span><span>Download the client.</span>
+    <span>2</span><span>Fill out the form.</span>
+    <span>3</span><span>Hit 'build'.</span>
   </div>
 </section>
 

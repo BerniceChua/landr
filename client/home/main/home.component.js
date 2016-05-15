@@ -17,7 +17,7 @@ var HomeComponent = (function () {
         core_1.Component({
             selector: 'home',
             templateUrl: 'client/home/main/home.html',
-            styleUrls: ['client/home/main/home.html'],
+            styleUrls: ['client/home/main/home.css'],
             directives: [router_deprecated_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
