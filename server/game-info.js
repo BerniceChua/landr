@@ -7,8 +7,8 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var gameInfoSchema = new Schema({
-  title: { type: String, required: true },
-  descrption: { type: String },
+  title: { type: String},
+  description: { type: String },
   pictures: [ { type: String } ],
   videos: [ { type: String } ],
   link_facebook: { type: String },
