@@ -1,0 +1,10 @@
+export declare function serverDirectiveResolver(componentType: any): any;
+export declare function selectorResolver(componentType: any): string;
+export declare function escapeRegExp(str: any): string;
+export declare function stringify(obj: any, replacer?: any, spaces?: number): string;
+export declare function cssHyphenate(propertyName: string): string;
+export declare function showDebug(options?: {}): string;
+export declare function stringToBoolean(txt: any): boolean | string;
+export declare function queryParamsToBoolean(query: any): any;
+export declare function selectorRegExpFactory(selector: string): RegExp;
+export declare function arrayFlattenTree(children: any[], arr: any[]): any[];

@@ -30,6 +30,14 @@ var GameService = (function () {
             .catch(this.handleError);
     };
     ;
+    GameService.prototype.addGame = function (title) {
+        var body = JSON.stringify({ title: title });
+        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: headers });
+        return this.http.post(this.gameUrl, body, options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
     GameService.prototype.extractData = function (res) {
         if (res.status < 200 || res.status >= 300) {
             throw new Error('Response status: ' + res.status);
