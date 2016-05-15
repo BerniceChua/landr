@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
- 
-mongoose.connect('mongodb://localhost:8080/my_database');
+
+//mongoose.connect('mongodb://localhost:8080/my_database');
+mongoose.connect('mongodb://landr-hackathon:Hackathon-2016-landR@ds036069.mlab.com:36069/LandrDB');
 
 var Schema = mongoose.Schema;
 
