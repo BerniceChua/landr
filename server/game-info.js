@@ -1,10 +1,11 @@
-var dotenv = require('dotenv').config();
 var mongoose = require('mongoose');
+/*
+var dotenv = require('dotenv').config();
+var process = require('process');
 
-var mongooseURI = 'mongodb://' + dotenv.DB_USER + ':' + dotenv.DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
-//mongoose.connect('mongodb://localhost:8080/my_database');
+var mongooseURI = 'mongodb://' + process.env.DB_USER + ':' + process.env.DB_PASSWORD + '@ds036069.mlab.com:36069/LandrDB';
 mongoose.connect(mongooseURI);
-
+*/
 var Schema = mongoose.Schema;
 
 // create a schema
