@@ -33,8 +33,8 @@ export class GameService {
                     .catch(this.handleError);
   };
 
-  addGame(title: string): Observable<Game> {
-    let body = JSON.stringify({ title });
+  addGame(game: Game): Observable<Game> {
+    let body = JSON.stringify({ game });
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
     return this.http.post(this.gameUrl, body, options)

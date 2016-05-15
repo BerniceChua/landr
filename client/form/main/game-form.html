@@ -1,0 +1,34 @@
+<h1>This is the form to create your landing page</h1>
+<section>
+  <form #gameForm="ngForm" (ngSubmit)="createPage(gameForm.value)">
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" placeholder="Username" ngControl="username">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Password" ngControl="password">
+    </div>
+    <div class="form-group">
+      <label>Title of the game</label>
+      <input type="text" class="form-control" placeholder="Title" ngControl="title">
+    </div>
+    <div class="form-group">
+      <label>Give a subtitle</label>
+      <input type="text" class="form-control" placeholder="An awesome subtitle for your landing page" ngControl="subtitle">
+    </div>
+    <div class="form-group">
+      <label>Youtube video</label>
+      <input type="text" class="form-control" placeholder="Put the url of your youtube url" ngControl="video">
+    </div>
+    <div class="form-group">
+      <label>Main image of the game</label>
+      <input type="text" class="form-control" placeholder="Put here the url of your image" ngControl="mainImage">
+    </div>
+    <div class="form-group">
+      <label>testimonials</label>
+      <input type="text" class="form-control" placeholder="If you have any testimonials, it go there" ngControl="testimonials">
+    </div>
+    <button class="btn btn-default" type="submit">Submit</button>
+  </form>
+</section>
