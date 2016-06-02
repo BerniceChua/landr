@@ -12,7 +12,7 @@ This simplifies the process, so that the indie game developers can focus on maki
 
 ### Video Pitch
 
-<<< Tobiah Zarlez will submit a pull request to submit the video link once it is uploaded >>>
+[![Final Presnetation: Landr](http://video.ch9.ms/ch9/eb1d/4f0612f0-d865-4785-920f-c927c0d8eb1d/tj16landr_Custom.jpg)](https://channel9.msdn.com/Events/ToolJam/2016/Landr "Final Presnetation: Landr")
 
 ## How did this project come about?
 
